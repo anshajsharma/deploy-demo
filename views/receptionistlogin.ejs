@@ -1,0 +1,140 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <script src="https://kit.fontawesome.com/a076d05399.js"></script>
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<style>
+  h3.solid {border-style: solid;
+    border-spacing: 0;
+    left: 100px;
+    right: 100px;
+    margin: 0;}
+  body{
+    background-image: url("https://www.ucsf.edu/sites/default/files/styles/600w/public/fields/field_insert_file/news/wikifeature.jpg?itok=MxS00ZIa");
+  background-size: 1980px 1080px;
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+  }
+body, html {
+  height: 100%;
+  font-family: Arial, Helvetica, sans-serif;
+}
+h3 {
+  background-color: grey;
+  text-align: center;
+  font-size: 60px;
+  font-weight: bold;
+}
+
+nav{
+  background:#594848;
+  width:100%;
+  overflow: auto;
+}
+ul{
+  margin: 0;
+  padding: 0;
+  list-style: none;
+}
+li{
+  float: left;
+}
+nav a{
+  width: 120px;
+  display:block;
+  text-decoration: none;
+  text-align:center;
+  background:#594848;
+  font-size: 17px;;
+  color:white;
+  padding:20px 10px;
+  font-family:arial; 
+}
+nav a:hover{
+  background:skyblue;
+}
+h2{
+  font-size: 40px;
+  font-weight: bold;
+  color: black;
+}
+* {
+  box-sizing: border-box;
+}
+
+.bg-img {
+  min-height: 600px;
+
+}
+
+/* Add styles to the form container */
+.container {
+ position: absolute;
+ right: 0px;
+ left: 200px;
+ margin: 20px;
+ max-width: 300px;
+ padding: 16px;
+ background-color: white;
+}
+
+/* Full-width input fields */
+input[type=text], input[type=password] {
+ width: 100%;
+ padding: 15px;
+ margin: 5px 0 22px 0;
+ border: none;
+ background: #f1f1f1;
+}
+
+input[type=text]:focus, input[type=password]:focus {
+ background-color: #ddd;
+ outline: none;
+}
+
+/* Set a style for the submit button */
+.btn {
+ background-color: #4CAF50;
+ color: white;
+ padding: 16px 20px 16px 200px;
+ border: none;
+ cursor: pointer;
+ width: 100%;
+ opacity: 0.9;
+}
+
+.btn:hover {
+ opacity: 1;
+}
+</style>
+</head>
+<body>
+ <h3 class="solid"><i class='fas fa-stethoscope' style='font-size:48px;color:red'></i>  NEWLIFE HOSPITAL</h1>
+  <nav>
+    <ul>
+      <li><a href="home">HOME</a></li>
+      <li><a href="#">ABOUT US</a></li>
+      <li><a href="#">CONTACT US</a></li>
+      <li><a href="#">LOCATION</a></li>
+      <li><a href="#">OUR TEAM</a></li>
+    </ul>
+  </nav>
+    <marquee><h2>**Clinic timings is from 5:00PM to 9:00PM**  SUNDAY OFF</h2></marquee>
+ <div class="bg-img">
+ <form action="/action_page.php" class="container">
+   <h1><i>Receptionist login </i></h1>
+
+   <label for="username"><b>Username</b></label>
+   <input type="text" placeholder="Enter Username" name="Username" required>
+
+   <label for="psw"><b>Password</b></label>
+   <input type="password" placeholder="Enter Password" name="psw" required>
+   <span class="psw"> <a href="#"> forgot password?</a></span>
+
+
+   <button type="submit" class="btn">Login</button>
+
+  </form>
+ </div>
+ <%- include('partials/footer') %>
+
