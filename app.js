@@ -71,6 +71,6 @@ app.get('/user/:id', function (req, res) {
     res.send('This page is not defined....... By Anshaj')
   })
 
-  app.listen(3000,function(){
+  app.listen(3000 || process.env.PORT,function(){
       console.log('Server has Started at port 3000 !!');
   })
